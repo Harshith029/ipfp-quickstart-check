@@ -1,0 +1,12 @@
+repo       ./india-public-finance-portal
+commit     4f8c7b9b3ad661869affa4797eaed39e3f6e3f16
+canonical  370,658.45 crore (budget estimate 2024-25, examples/data/processed/canonical_numbers.json), tolerance 0.01 crore
+
+option    unrounded (crore)       diff  in tolerance    prints  comment says  comment matches print
+A               370658.4489    -0.0011  yes            370,658       370,659  NO
+B               370658.4489    -0.0011  yes            370,658       370,659  NO
+C               370658.4489    -0.0011  yes            370,658       370,658  yes
+
+PASS: all three options agree with the canonical figure within tolerance.
+NOTE: Option A: the snippet prints 370,658 but its comment says ~370,659.
+NOTE: Option B: the snippet prints 370,658 but its comment says ~370,659.
